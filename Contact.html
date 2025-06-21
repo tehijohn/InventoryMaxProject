@@ -1,156 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | InventoryMax</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="logo">Inventory<span>Max</span></div>
-      <nav class="nav">
-        <ul class="nav-links">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="features.html">Features</a></li>
-          <li><a href="how-it-works.html">How it Works</a></li>
-          <li><a href="who-its-for.html">Who It’s For</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <a href="#start" class="btn cta">Get Started</a>
-      </nav>
-    </div>
-  </header>
-  <section>
-    <h1>Contact Us</h1>
-    <p>Email us at support@inventorymax.com or call +234-XXX-XXXX.</p>
-    <form>
-      <input type="text" placeholder="Your Name" required><br>
-      <input type="email" placeholder="Your Email" required><br>
-      <textarea placeholder="Your Message" required></textarea><br>
-      <button type="submit" class="btn cta">Send Message</button>
-    </form>
-  </section>
-  <script src="script.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>InventoryMax Landing Page</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us | InventoryMax</title>
+  <link rel="stylesheet" href="Contact.css" />
+  <link rel="stylesheet" href="Style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-  <!-- Header Section -->
+
+  <!-- Navbar -->
   <header class="header">
+      <div class="container nav-container">
+        <div class="logo">Inventory<span>Max</span></div>
+        <nav
+          class="nav"
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+          id="nav-menu"
+        >
+          <ul class="nav-links">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="how-it-works.html">How it Works</a></li>
+            <li><a href="who-its-for.html">Who It's For</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+          <a href="signup.html" class="btn cta" style="margin-left: 2rem"
+            >Get Started</a
+          >
+        </nav>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+  <!-- Hero -->
+  <section class="hero">
     <div class="container">
-      <div class="logo">Inventory<span>Max</span></div>
-      <nav class="nav" id="nav-menu">
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#how">How it Works</a></li>
-          <li><a href="#who">Who It’s For</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <a href="#start" class="btn cta">Get Started</a>
-      </nav>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <h1>Transform How You Manage Inventory</h1>
-    <p>Streamline operations, boost productivity, and scale your small business with InventoryMax.</p>
-    <a href="#start" class="btn cta">Try It Free</a>
-  </section>
-
-  <!-- Features Section -->
-  <section id="features">
-    <h2>Powerful Features to Simplify Inventory Management</h2>
-    <ul>
-      <li>Real-time stock tracking and alerts</li>
-      <li>Sales & purchase order management</li>
-      <li>Customizable reports & smart analytics</li>
-      <li>Mobile-first, user-friendly interface</li>
-      <li>Seamless integration with platforms you already use</li>
-    </ul>
-  </section>
-
-  <!-- How It Works Section -->
-  <section id="how">
-    <h2>How It Works</h2>
-    <p>Sign up, set up your inventory in minutes, and start managing stock with ease from any device.</p>
-    <img src="images/dashboard-preview.jpg" alt="Inventory dashboard preview" style="width: 90%; max-width: 600px; border-radius: 10px;" />
-  </section>
-
-  <!-- Who It’s For Section -->
-  <section id="who">
-    <h2>Built for Businesses Like Yours</h2>
-    <p>InventoryMax is ideal for retail shops, restaurants, workshops, and small manufacturers across Nigeria.</p>
-    <ul>
-      <li>Fashion boutiques and electronics stores</li>
-      <li>Local eateries and food trucks</li>
-      <li>Artisan workshops and small factories</li>
-    </ul>
-  </section>
-
-  <!-- Testimonials Section -->
-  <section id="testimonials">
-    <h2>What Users Are Saying</h2>
-    <blockquote>
-      <p>"InventoryMax changed how I run my store. I can track everything from my phone. Love it!" – Ada, Boutique Owner</p>
-    </blockquote>
-    <blockquote>
-      <p>"Now I can predict demand better and avoid running out of ingredients. Great tool!" – John, Restaurant Owner</p>
-    </blockquote>
-  </section>
-
-  <!-- Pricing Section -->
-  <section id="pricing">
-    <h2>Simple Pricing for Every Stage of Growth</h2>
-    <div class="pricing-plans">
-      <div class="plan">
-        <h3>Starter</h3>
-        <p><strong>₦0</strong> / month</p>
-        <p>Essential tools for micro businesses</p>
-      </div>
-      <div class="plan">
-        <h3>Pro</h3>
-        <p><strong>₦5,000</strong> / month</p>
-        <p>Advanced analytics & integrations</p>
-      </div>
-      <div class="plan">
-        <h3>Business</h3>
-        <p><strong>₦10,000</strong> / month</p>
-        <p>Full features + premium support</p>
-      </div>
+      <h1>Get in Touch with InventoryMax</h1>
+      <p>We’re here to help you manage your inventory smarter.</p>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Have questions? Get in touch and we’ll help you get started.</p>
-    <form>
-      <input type="text" placeholder="Your Name" required><br>
-      <input type="email" placeholder="Your Email" required><br>
-      <textarea placeholder="Your Message" required></textarea><br>
-      <button type="submit" class="btn cta">Send Message</button>
-    </form>
+  <section class="contact-section">
+    <div class="container contact-grid">
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p><i class="fas fa-envelope"></i> tinajohnomon@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +234 814 4441 712</p>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Business Rd, Lagos, Nigeria</p>
+        <p>Follow us:</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=100094686266822" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href=" https://x.com/tinajohnomon?t=p8LX-K8H8cLpWzyUP5TYaw&s=09" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/forstinajohn3007" aria-label="LinkedIn" target="_blank" ><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/johnomontina?igsh=MWFlcWE5cjBwaWNidA==" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="#" method="POST">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+
+          <button type="submit" class="btn cta">Send Message</button>
+        </form>
+      </div>
+
+    </div>
   </section>
 
-  <script src="script.js"></script>
-</body>
+  <!-- Footer -->
 
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-brand">
+          <h3>Inventory<span>Max</span></h3>
+          <p>Smart Inventory Management tailored for Nigerian businesses.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="Features.html">Features</a></li>
+            <li><a href="#how">How it Works</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>Email: support@inventorymax.com</p>
+          <p>Phone: +234-XXX-XXXX</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Email" class="social-link"><i class="fa-regular fa-envelope"></i></a>
+            <a href="#" aria-label="Twitter" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 InventoryMax. All rights reserved.</p>
+      </div>
+    </footer>
+  <script src="JS/Index.js"></script>
+</body>
 </html>

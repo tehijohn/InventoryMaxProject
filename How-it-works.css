@@ -1,0 +1,56 @@
+/* Hero Section */
+.hero {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
+  padding: 4rem 2rem;
+}
+
+/* Steps Section */
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.step {
+  background: #1e1e1e;
+  padding: 2rem;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+.step:hover {
+  transform: translateY(-5px);
+}
+.step i {
+  color: #f97316;
+  margin-bottom: 1rem;
+}
+
+/* Demo Section */
+.demo {
+  background: #1e3a8a;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+.demo h2, .demo p {
+  color: white;
+}
+.demo .btn {
+  margin-top: 1rem;
+  background: #f97316;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  color: #fff;
+}
+
